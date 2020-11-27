@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 2.创建填充布局文件list_item.xml-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@drawable/paihang"
+    >
+
+    <TextView
+        android:id="@+id/mingci"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/yuan"
+        android:gravity="center"
+        android:text="1" />
+    <ImageView
+        android:id="@+id/psy_image"
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/psy_image"
+        />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名 "/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/psy_name"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接单数" />
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/psy_jdcs"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
